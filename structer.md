@@ -18,66 +18,78 @@
 
     A clean professional layout could look like this:
 
-    pdfengine/
-    │
-    ├── CMakeLists.txt
-    │
-    ├── include/
-    │   └── pdf/
-    │        ├── platform/
-    │        │     platform_api.h
-    │        │
-    │        ├── system/
-    │        │     memory_pool.h
-    │        │     vector.h
-                    ├── arena_allocator   (later)
-                    ├── string            (later)
-                    └── logger            (later)
-    │        │
-    │        ├── core/
-    │        │     document.h
-    │        │     page.h
-    │        │     object.h
-    │        │
-    │        └── api/
-    │              pdf_engine.h
-    │
-    ├── src/
-    │   ├── platform/
-    │   │     platform_api.c
-    │   │     win/
-    │   │     linux/
-    │   │     mac/
-    │   │
-    │   ├── system/
-    │   │     memory_pool.c
-    │   │     vector.c
-    │   │
-    │   ├── core/
-    │   │     document.c
-    │   │     page.c
-    │   │     object.c
-    │   │
-    │   ├── parser/
-    │   │     pdf_parser.c
-    │   │     xref_parser.c
-    │   │
-    │   ├── writer/
-    │   │     pdf_writer.c
-    │   │
-    │   └── render/
-    │         renderer.c
-    │
-    ├── plugins/
-    │
-    ├── tools/
-    │   ├── img2pdf/
-    │   │     main.c
-    │   │
-    │   └── pdfinfo/
-    │         main.c
-    │
-    └── tests/
+pdfengine/
+│
+├── CMakeLists.txt
+│
+├── cmake/
+        CompilerWarnings.cmake
+        PerformDetect.cmake
+        Sanitizers.cmake
+│
+├── include/
+│  
+│       ├── api/
+│       │   └── pdf_engine_api.h
+│       │
+│       ├── core/
+│       │   ├── pdf_catalog.h
+│       │   ├── pdf_content_stream.h
+│       │   ├── pdf_document.h
+│       │   ├── pdf_image_loader.h
+│       │   ├── pdf_image_xobject.h
+│       │   ├── pdf_object.h
+│       │   ├── pdf_page.h
+│       │   ├── pdf_pages_tree.h
+│       │   ├── pdf_stream.h
+│       │   ├── pdf_writer_document.h
+│       │   └── pdf_xref.h
+                 
+│       │
+│       ├── image_loader/
+│       │   ├── bmp_loader.h
+│       │   ├── jpeg_loader.h
+│       │   └── png_loader.h
+│       │
+│       ├── platform/
+│       │   └── platform_api.h
+│       │
+│       └── system/
+│           ├── memory_pool.h
+│           └── vector.h
+│
+├── src/
+│
+│   ├── api/
+│   │   └── pdf_engine_api.c
+│   │
+│   ├── core/
+│   │   ├── pdf_catalog.c
+│   │   ├── pdf_content_stream.c
+│   │   ├── pdf_document.c
+│   │   ├── pdf_image_loader.c
+│   │   ├── pdf_image_xobject.c
+│   │   ├── pdf_object.c
+│   │   ├── pdf_page.c
+│   │   ├── pdf_pages_tree.c
+│   │   ├── pdf_stream.c
+│   │   ├── pdf_writer_document.c
+│   │   └── pdf_xref.c
+│   │
+│   ├── image_loader/
+│   │   ├── bmp_loader.c
+│   │   ├── jpeg_loader.c
+│   │   └── png_loader.c
+│   │
+│   ├── platform/
+│   │   └── platform_api.c
+│   │
+│   └── system/
+│       ├── memory_pool.c
+│       └── vector.c
+│
+└── tests/
+    └── test_image_to_pdf.c
 
 ### Professional Engine Folder Structure
 
@@ -162,7 +174,15 @@
     │
     └── tools/
 
+### What Real PDF Engines Add Next
 
+    Professional engines next implement:
+
+    JPEG dimension parser
+    PNG decompression
+    Color spaces
+    Image compression
+    Multi-page support
 
 ### Step This structure is similar in philosophy to projects like MuPDF
 
@@ -208,18 +228,6 @@
     fonts
 
     All of those will likely be vectors.
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Step 5 — First Real Tool
 
