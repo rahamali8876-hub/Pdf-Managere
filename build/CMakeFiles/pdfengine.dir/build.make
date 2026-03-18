@@ -131,26 +131,11 @@ CMakeFiles/pdfengine.dir/src/core/pdf_content_builder.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/pdfengine.dir/src/core/pdf_content_builder.c.s"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_content_builder.c" -o CMakeFiles\pdfengine.dir\src\core\pdf_content_builder.c.s
 
-CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj: CMakeFiles/pdfengine.dir/flags.make
-CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
-CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_content_stream.c
-CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj"
-	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_content_stream.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_content_stream.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_content_stream.c"
-
-CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.i"
-	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_content_stream.c" > CMakeFiles\pdfengine.dir\src\core\pdf_content_stream.c.i
-
-CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.s"
-	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_content_stream.c" -o CMakeFiles\pdfengine.dir\src\core\pdf_content_stream.c.s
-
 CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj: CMakeFiles/pdfengine.dir/flags.make
 CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_dictionary.c
 CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_dictionary.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_dictionary.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_dictionary.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.i: cmake_force
@@ -165,7 +150,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj: CMakeFiles/pdfengine.dir/f
 CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_document.c
 CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_document.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_document.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_document.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_document.c.i: cmake_force
@@ -180,7 +165,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_image.c.obj: CMakeFiles/pdfengine.dir/flag
 CMakeFiles/pdfengine.dir/src/core/pdf_image.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_image.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_image.c
 CMakeFiles/pdfengine.dir/src/core/pdf_image.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_image.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_image.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_image.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_image.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_image.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_image.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_image.c.i: cmake_force
@@ -195,7 +180,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_image_xobject.c.obj: CMakeFiles/pdfengine.
 CMakeFiles/pdfengine.dir/src/core/pdf_image_xobject.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_image_xobject.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_image_xobject.c
 CMakeFiles/pdfengine.dir/src/core/pdf_image_xobject.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_image_xobject.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_image_xobject.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_image_xobject.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_image_xobject.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_image_xobject.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_image_xobject.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_image_xobject.c.i: cmake_force
@@ -210,7 +195,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_object.c.obj: CMakeFiles/pdfengine.dir/fla
 CMakeFiles/pdfengine.dir/src/core/pdf_object.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_object.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_object.c
 CMakeFiles/pdfengine.dir/src/core/pdf_object.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_object.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_object.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_object.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_object.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_object.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_object.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_object.c.i: cmake_force
@@ -225,7 +210,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_object_allocator.c.obj: CMakeFiles/pdfengi
 CMakeFiles/pdfengine.dir/src/core/pdf_object_allocator.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_object_allocator.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_object_allocator.c
 CMakeFiles/pdfengine.dir/src/core/pdf_object_allocator.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_object_allocator.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_object_allocator.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_object_allocator.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_object_allocator.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_object_allocator.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_object_allocator.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_object_allocator.c.i: cmake_force
@@ -240,7 +225,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_object_manager.c.obj: CMakeFiles/pdfengine
 CMakeFiles/pdfengine.dir/src/core/pdf_object_manager.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_object_manager.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_object_manager.c
 CMakeFiles/pdfengine.dir/src/core/pdf_object_manager.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_object_manager.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_object_manager.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_object_manager.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_object_manager.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_object_manager.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_object_manager.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_object_manager.c.i: cmake_force
@@ -255,7 +240,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_object_store.c.obj: CMakeFiles/pdfengine.d
 CMakeFiles/pdfengine.dir/src/core/pdf_object_store.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_object_store.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_object_store.c
 CMakeFiles/pdfengine.dir/src/core/pdf_object_store.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_object_store.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_object_store.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_object_store.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_object_store.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_object_store.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_object_store.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_object_store.c.i: cmake_force
@@ -270,7 +255,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_page.c.obj: CMakeFiles/pdfengine.dir/flags
 CMakeFiles/pdfengine.dir/src/core/pdf_page.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_page.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_page.c
 CMakeFiles/pdfengine.dir/src/core/pdf_page.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_page.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_page.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_page.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_page.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_page.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_page.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_page.c.i: cmake_force
@@ -285,7 +270,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_page_resources.c.obj: CMakeFiles/pdfengine
 CMakeFiles/pdfengine.dir/src/core/pdf_page_resources.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_page_resources.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_page_resources.c
 CMakeFiles/pdfengine.dir/src/core/pdf_page_resources.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_page_resources.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_page_resources.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_page_resources.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_page_resources.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_page_resources.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_page_resources.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_page_resources.c.i: cmake_force
@@ -300,7 +285,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_pages_tree.c.obj: CMakeFiles/pdfengine.dir
 CMakeFiles/pdfengine.dir/src/core/pdf_pages_tree.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_pages_tree.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_pages_tree.c
 CMakeFiles/pdfengine.dir/src/core/pdf_pages_tree.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_pages_tree.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_pages_tree.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_pages_tree.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_pages_tree.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_pages_tree.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_pages_tree.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_pages_tree.c.i: cmake_force
@@ -315,7 +300,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_stream.c.obj: CMakeFiles/pdfengine.dir/fla
 CMakeFiles/pdfengine.dir/src/core/pdf_stream.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_stream.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_stream.c
 CMakeFiles/pdfengine.dir/src/core/pdf_stream.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_stream.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_stream.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_stream.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_stream.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_stream.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_stream.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_stream.c.i: cmake_force
@@ -330,7 +315,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_writer_document.c.obj: CMakeFiles/pdfengin
 CMakeFiles/pdfengine.dir/src/core/pdf_writer_document.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_writer_document.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_writer_document.c
 CMakeFiles/pdfengine.dir/src/core/pdf_writer_document.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_writer_document.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_writer_document.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_writer_document.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_writer_document.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_writer_document.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_writer_document.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_writer_document.c.i: cmake_force
@@ -345,7 +330,7 @@ CMakeFiles/pdfengine.dir/src/core/pdf_xref.c.obj: CMakeFiles/pdfengine.dir/flags
 CMakeFiles/pdfengine.dir/src/core/pdf_xref.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/core/pdf_xref.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/core/pdf_xref.c
 CMakeFiles/pdfengine.dir/src/core/pdf_xref.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_xref.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/pdfengine.dir/src/core/pdf_xref.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/core/pdf_xref.c.obj -MF CMakeFiles\pdfengine.dir\src\core\pdf_xref.c.obj.d -o CMakeFiles\pdfengine.dir\src\core\pdf_xref.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\core\pdf_xref.c"
 
 CMakeFiles/pdfengine.dir/src/core/pdf_xref.c.i: cmake_force
@@ -360,7 +345,7 @@ CMakeFiles/pdfengine.dir/src/system/memory_pool.c.obj: CMakeFiles/pdfengine.dir/
 CMakeFiles/pdfengine.dir/src/system/memory_pool.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/system/memory_pool.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/system/memory_pool.c
 CMakeFiles/pdfengine.dir/src/system/memory_pool.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/pdfengine.dir/src/system/memory_pool.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/pdfengine.dir/src/system/memory_pool.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/system/memory_pool.c.obj -MF CMakeFiles\pdfengine.dir\src\system\memory_pool.c.obj.d -o CMakeFiles\pdfengine.dir\src\system\memory_pool.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\system\memory_pool.c"
 
 CMakeFiles/pdfengine.dir/src/system/memory_pool.c.i: cmake_force
@@ -375,7 +360,7 @@ CMakeFiles/pdfengine.dir/src/system/vector.c.obj: CMakeFiles/pdfengine.dir/flags
 CMakeFiles/pdfengine.dir/src/system/vector.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/system/vector.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/system/vector.c
 CMakeFiles/pdfengine.dir/src/system/vector.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/pdfengine.dir/src/system/vector.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/pdfengine.dir/src/system/vector.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/system/vector.c.obj -MF CMakeFiles\pdfengine.dir\src\system\vector.c.obj.d -o CMakeFiles\pdfengine.dir\src\system\vector.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\system\vector.c"
 
 CMakeFiles/pdfengine.dir/src/system/vector.c.i: cmake_force
@@ -390,7 +375,7 @@ CMakeFiles/pdfengine.dir/src/platform/platform_api.c.obj: CMakeFiles/pdfengine.d
 CMakeFiles/pdfengine.dir/src/platform/platform_api.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/platform/platform_api.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/platform/platform_api.c
 CMakeFiles/pdfengine.dir/src/platform/platform_api.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/pdfengine.dir/src/platform/platform_api.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/pdfengine.dir/src/platform/platform_api.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/platform/platform_api.c.obj -MF CMakeFiles\pdfengine.dir\src\platform\platform_api.c.obj.d -o CMakeFiles\pdfengine.dir\src\platform\platform_api.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\platform\platform_api.c"
 
 CMakeFiles/pdfengine.dir/src/platform/platform_api.c.i: cmake_force
@@ -405,7 +390,7 @@ CMakeFiles/pdfengine.dir/src/image_loader/bmp_loader.c.obj: CMakeFiles/pdfengine
 CMakeFiles/pdfengine.dir/src/image_loader/bmp_loader.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/image_loader/bmp_loader.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/image_loader/bmp_loader.c
 CMakeFiles/pdfengine.dir/src/image_loader/bmp_loader.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/bmp_loader.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/bmp_loader.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/image_loader/bmp_loader.c.obj -MF CMakeFiles\pdfengine.dir\src\image_loader\bmp_loader.c.obj.d -o CMakeFiles\pdfengine.dir\src\image_loader\bmp_loader.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\image_loader\bmp_loader.c"
 
 CMakeFiles/pdfengine.dir/src/image_loader/bmp_loader.c.i: cmake_force
@@ -420,7 +405,7 @@ CMakeFiles/pdfengine.dir/src/image_loader/image_loader.c.obj: CMakeFiles/pdfengi
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/image_loader/image_loader.c
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/image_loader.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/image_loader.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/image_loader/image_loader.c.obj -MF CMakeFiles\pdfengine.dir\src\image_loader\image_loader.c.obj.d -o CMakeFiles\pdfengine.dir\src\image_loader\image_loader.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\image_loader\image_loader.c"
 
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader.c.i: cmake_force
@@ -435,7 +420,7 @@ CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry.c.obj: CMakeFile
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/image_loader/image_loader_registry.c
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry.c.obj -MF CMakeFiles\pdfengine.dir\src\image_loader\image_loader_registry.c.obj.d -o CMakeFiles\pdfengine.dir\src\image_loader\image_loader_registry.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\image_loader\image_loader_registry.c"
 
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry.c.i: cmake_force
@@ -450,7 +435,7 @@ CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry_init.c.obj: CMak
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry_init.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry_init.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/image_loader/image_loader_registry_init.c
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry_init.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry_init.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry_init.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry_init.c.obj -MF CMakeFiles\pdfengine.dir\src\image_loader\image_loader_registry_init.c.obj.d -o CMakeFiles\pdfengine.dir\src\image_loader\image_loader_registry_init.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\image_loader\image_loader_registry_init.c"
 
 CMakeFiles/pdfengine.dir/src/image_loader/image_loader_registry_init.c.i: cmake_force
@@ -465,7 +450,7 @@ CMakeFiles/pdfengine.dir/src/image_loader/jpeg_loader.c.obj: CMakeFiles/pdfengin
 CMakeFiles/pdfengine.dir/src/image_loader/jpeg_loader.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/image_loader/jpeg_loader.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/image_loader/jpeg_loader.c
 CMakeFiles/pdfengine.dir/src/image_loader/jpeg_loader.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/jpeg_loader.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/jpeg_loader.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/image_loader/jpeg_loader.c.obj -MF CMakeFiles\pdfengine.dir\src\image_loader\jpeg_loader.c.obj.d -o CMakeFiles\pdfengine.dir\src\image_loader\jpeg_loader.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\image_loader\jpeg_loader.c"
 
 CMakeFiles/pdfengine.dir/src/image_loader/jpeg_loader.c.i: cmake_force
@@ -480,7 +465,7 @@ CMakeFiles/pdfengine.dir/src/image_loader/png_loader.c.obj: CMakeFiles/pdfengine
 CMakeFiles/pdfengine.dir/src/image_loader/png_loader.c.obj: CMakeFiles/pdfengine.dir/includes_C.rsp
 CMakeFiles/pdfengine.dir/src/image_loader/png_loader.c.obj: C:/Users/Flex\ 1/Desktop/Rofik\ don/Softwares/C\ Programming/pdfengine/src/image_loader/png_loader.c
 CMakeFiles/pdfengine.dir/src/image_loader/png_loader.c.obj: CMakeFiles/pdfengine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/png_loader.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/pdfengine.dir/src/image_loader/png_loader.c.obj"
 	C:\msys64\mingw64\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/pdfengine.dir/src/image_loader/png_loader.c.obj -MF CMakeFiles\pdfengine.dir\src\image_loader\png_loader.c.obj.d -o CMakeFiles\pdfengine.dir\src\image_loader\png_loader.c.obj -c "C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\src\image_loader\png_loader.c"
 
 CMakeFiles/pdfengine.dir/src/image_loader/png_loader.c.i: cmake_force
@@ -497,7 +482,6 @@ pdfengine_OBJECTS = \
 "CMakeFiles/pdfengine.dir/src/core/pdf_array.c.obj" \
 "CMakeFiles/pdfengine.dir/src/core/pdf_catalog.c.obj" \
 "CMakeFiles/pdfengine.dir/src/core/pdf_content_builder.c.obj" \
-"CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj" \
 "CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj" \
 "CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj" \
 "CMakeFiles/pdfengine.dir/src/core/pdf_image.c.obj" \
@@ -529,7 +513,6 @@ libpdfengine.a: CMakeFiles/pdfengine.dir/src/api/pdf_engine_api.c.obj
 libpdfengine.a: CMakeFiles/pdfengine.dir/src/core/pdf_array.c.obj
 libpdfengine.a: CMakeFiles/pdfengine.dir/src/core/pdf_catalog.c.obj
 libpdfengine.a: CMakeFiles/pdfengine.dir/src/core/pdf_content_builder.c.obj
-libpdfengine.a: CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj
 libpdfengine.a: CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj
 libpdfengine.a: CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj
 libpdfengine.a: CMakeFiles/pdfengine.dir/src/core/pdf_image.c.obj
@@ -555,7 +538,7 @@ libpdfengine.a: CMakeFiles/pdfengine.dir/src/image_loader/jpeg_loader.c.obj
 libpdfengine.a: CMakeFiles/pdfengine.dir/src/image_loader/png_loader.c.obj
 libpdfengine.a: CMakeFiles/pdfengine.dir/build.make
 libpdfengine.a: CMakeFiles/pdfengine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Linking C static library libpdfengine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Flex 1\Desktop\Rofik don\Softwares\C Programming\pdfengine\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Linking C static library libpdfengine.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\pdfengine.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\pdfengine.dir\link.txt --verbose=$(VERBOSE)
 

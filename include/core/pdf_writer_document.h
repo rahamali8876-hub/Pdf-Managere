@@ -9,14 +9,14 @@ extern "C"
 {
 #endif
 
-#include "core/pdf_content_stream.h"
+// #include "core/pdf_content_stream.h"
 #include "core/pdf_image_xobject.h"
 
     int
     pdf_writer_write_image_page(
         const char *path,
         pdf_image_xobject_t *image,
-        pdf_content_stream_t *content);
+        // pdf_content_stream_t *content);
 
 #ifdef __cplusplus
 }

@@ -237,30 +237,6 @@ src/core/pdf_content_builder.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pdfengine.dir\build.make CMakeFiles/pdfengine.dir/src/core/pdf_content_builder.c.s
 .PHONY : src/core/pdf_content_builder.c.s
 
-src/core/pdf_content_stream.obj: src/core/pdf_content_stream.c.obj
-.PHONY : src/core/pdf_content_stream.obj
-
-# target to build an object file
-src/core/pdf_content_stream.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pdfengine.dir\build.make CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj
-.PHONY : src/core/pdf_content_stream.c.obj
-
-src/core/pdf_content_stream.i: src/core/pdf_content_stream.c.i
-.PHONY : src/core/pdf_content_stream.i
-
-# target to preprocess a source file
-src/core/pdf_content_stream.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pdfengine.dir\build.make CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.i
-.PHONY : src/core/pdf_content_stream.c.i
-
-src/core/pdf_content_stream.s: src/core/pdf_content_stream.c.s
-.PHONY : src/core/pdf_content_stream.s
-
-# target to generate assembly for a file
-src/core/pdf_content_stream.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\pdfengine.dir\build.make CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.s
-.PHONY : src/core/pdf_content_stream.c.s
-
 src/core/pdf_dictionary.obj: src/core/pdf_dictionary.c.obj
 .PHONY : src/core/pdf_dictionary.obj
 
@@ -859,9 +835,6 @@ help:
 	@echo ... src/core/pdf_content_builder.obj
 	@echo ... src/core/pdf_content_builder.i
 	@echo ... src/core/pdf_content_builder.s
-	@echo ... src/core/pdf_content_stream.obj
-	@echo ... src/core/pdf_content_stream.i
-	@echo ... src/core/pdf_content_stream.s
 	@echo ... src/core/pdf_dictionary.obj
 	@echo ... src/core/pdf_dictionary.i
 	@echo ... src/core/pdf_dictionary.s

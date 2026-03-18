@@ -7,8 +7,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/pdfengine.dir/src/core/pdf_catalog.c.obj.d"
   "CMakeFiles/pdfengine.dir/src/core/pdf_content_builder.c.obj"
   "CMakeFiles/pdfengine.dir/src/core/pdf_content_builder.c.obj.d"
-  "CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj"
-  "CMakeFiles/pdfengine.dir/src/core/pdf_content_stream.c.obj.d"
   "CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj"
   "CMakeFiles/pdfengine.dir/src/core/pdf_dictionary.c.obj.d"
   "CMakeFiles/pdfengine.dir/src/core/pdf_document.c.obj"
