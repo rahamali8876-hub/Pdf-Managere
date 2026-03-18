@@ -1,0 +1,4 @@
+C:/Users/Flex 1/Desktop/Rofik don/Softwares/C Programming/pdfengine/build/CMakeFiles/pdfengine.dir
+C:/Users/Flex 1/Desktop/Rofik don/Softwares/C Programming/pdfengine/build/CMakeFiles/test_pdf.dir
+C:/Users/Flex 1/Desktop/Rofik don/Softwares/C Programming/pdfengine/build/CMakeFiles/edit_cache.dir
+C:/Users/Flex 1/Desktop/Rofik don/Softwares/C Programming/pdfengine/build/CMakeFiles/rebuild_cache.dir

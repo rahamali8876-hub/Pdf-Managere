@@ -1,137 +1,148 @@
-// // // src/core/pdf_writer_document.c
+// src/core/pdf_writer_document.c
 
 #include "core/pdf_writer_document.h"
 
 #include <stdio.h>
 
 #include "core/pdf_object_manager.h"
+#include "core/pdf_page_resources.h"
+#include "core/pdf_content_builder.h"
 
-FILE *f = fopen("output.pdf", "wb");
-
-fprintf(f, "%%PDF-1.4\n");
-
-pdf_object_manager_t *mgr =
-    pdf_object_manager_create(16);
-
-pdf_object_id catalog =
-    pdf_object_manager_new(mgr);
-
-pdf_object_id pages =
-    pdf_object_manager_new(mgr);
-
-/* catalog */
-
-pdf_object_manager_begin(mgr, f, catalog);
-
-fprintf(f,
-        "<< /Type /Catalog /Pages %d 0 R >>\n",
-        pages);
-
-pdf_object_manager_end(f);
-
-/* pages */
-
-pdf_object_manager_begin(mgr, f, pages);
-
-fprintf(f,
-        "<< /Type /Pages /Count 0 >>\n");
-
-pdf_object_manager_end(f);
-
-/* write xref */
-
-pdf_xref_t *xref =
-    pdf_xref_create(16);
-
-/* object 1 */
-
-pdf_xref_register(xref, 1, ftell(f));
-fprintf(f, "1 0 obj\n");
-fprintf(f, "<< /Type /Catalog /Pages 2 0 R >>\n");
-fprintf(f, "endobj\n");
-
-/* object 2 */
-
-pdf_xref_register(xref, 2, ftell(f));
-fprintf(f, "2 0 obj\n");
-fprintf(f, "<< /Type /Pages /Count 0 >>\n");
-fprintf(f, "endobj\n");
-
-/* write xref */
-
-long pos = ftell(f);
-
-pdf_xref_write(xref, f, pos);
-
-pdf_xref_destroy(xref);
-
-pdf_object_manager_write_xref(
-    mgr,
-    f,
-    catalog);
-
-pdf_object_manager_destroy(mgr);
-
-fclose(f);
+/*
+============================================================
+FINAL IMAGE → PDF WRITER
+============================================================
+*/
 
 int pdf_writer_write_image_page(
     const char *path,
     pdf_image_xobject_t *image,
-    pdf_content_stream_t *content)
+    pdf_content_stream_t *content_unused) /* legacy */
 {
         FILE *f = fopen(path, "wb");
         if (!f)
                 return -1;
 
-        /* object offsets for xref */
-        long offsets[6];
-
         fprintf(f, "%%PDF-1.4\n");
 
-        /* --------------------------------------------------
-           1 Catalog
-        -------------------------------------------------- */
+        /*
+        ============================================================
+        INIT SYSTEMS
+        ============================================================
+        */
 
-        offsets[1] = ftell(f);
+        pdf_object_manager_t *mgr =
+            pdf_object_manager_create(16);
+
+        pdf_page_resources_t *res =
+            pdf_page_resources_create();
+
+        pdf_content_builder_t *cb =
+            pdf_content_builder_create(256);
+
+        if (!mgr || !res || !cb)
+                return -1;
+
+        /*
+        ============================================================
+        CREATE OBJECT IDS
+        ============================================================
+        */
+
+        int catalog = pdf_object_manager_new(mgr);
+        int pages = pdf_object_manager_new(mgr);
+        int page = pdf_object_manager_new(mgr);
+        int image_obj = pdf_object_manager_new(mgr);
+        int content_obj = pdf_object_manager_new(mgr);
+
+        /*
+        ============================================================
+        REGISTER IMAGE RESOURCE
+        ============================================================
+        */
+
+        const char *img_name =
+            pdf_page_resources_add_image(
+                res,
+                image_obj);
+
+        /*
+        ============================================================
+        BUILD CONTENT STREAM (DSL)
+        ============================================================
+        */
+
+        pdf_cb_draw_image(
+            cb,
+            img_name,
+            0,
+            0,
+            (float)pdf_image_xobject_width(image),
+            (float)pdf_image_xobject_height(image));
+
+        /*
+        ============================================================
+        1. CATALOG
+        ============================================================
+        */
+
+        pdf_object_manager_begin(mgr, f, catalog);
+
         fprintf(f,
-                "1 0 obj\n"
-                "<< /Type /Catalog /Pages 2 0 R >>\n"
-                "endobj\n");
+                "<< /Type /Catalog /Pages %d 0 R >>\n",
+                pages);
 
-        /* --------------------------------------------------
-           2 Pages
-        -------------------------------------------------- */
+        pdf_object_manager_end(f);
 
-        offsets[2] = ftell(f);
+        /*
+        ============================================================
+        2. PAGES
+        ============================================================
+        */
+
+        pdf_object_manager_begin(mgr, f, pages);
+
         fprintf(f,
-                "2 0 obj\n"
-                "<< /Type /Pages /Kids [3 0 R] /Count 1 >>\n"
-                "endobj\n");
+                "<< /Type /Pages /Kids [%d 0 R] /Count 1 >>\n",
+                page);
 
-        /* --------------------------------------------------
-           3 Page
-        -------------------------------------------------- */
+        pdf_object_manager_end(f);
 
-        offsets[3] = ftell(f);
+        /*
+        ============================================================
+        3. PAGE
+        ============================================================
+        */
+
+        pdf_object_manager_begin(mgr, f, page);
+
         fprintf(f,
-                "3 0 obj\n"
                 "<< /Type /Page\n"
-                "/Parent 2 0 R\n"
-                "/Resources << /XObject << /Im0 4 0 R >> >>\n"
+                "/Parent %d 0 R\n"
                 "/MediaBox [0 0 %d %d]\n"
-                "/Contents 5 0 R >>\n"
-                "endobj\n",
+                "/Resources ",
+                pages,
                 pdf_image_xobject_width(image),
                 pdf_image_xobject_height(image));
 
-        /* --------------------------------------------------
-           4 Image XObject
-        -------------------------------------------------- */
-
-        offsets[4] = ftell(f);
+        pdf_page_resources_write(res, f);
 
         fprintf(f,
-                "4 0 obj\n"
+                "/Contents %d 0 R\n"
+                ">>\n",
+                content_obj);
+
+        pdf_object_manager_end(f);
+
+        /*
+        ============================================================
+        4. IMAGE XOBJECT
+        ============================================================
+        */
+
+        pdf_object_manager_begin(mgr, f, image_obj);
+
+        fprintf(f,
                 "<< /Type /XObject\n"
                 "/Subtype /Image\n"
                 "/Width %d\n"
@@ -140,8 +151,6 @@ int pdf_writer_write_image_page(
                 "/BitsPerComponent 8\n",
                 pdf_image_xobject_width(image),
                 pdf_image_xobject_height(image));
-
-        /* optional compression filter (JPEG) */
 
         if (pdf_image_xobject_filter(image))
         {
@@ -162,68 +171,54 @@ int pdf_writer_write_image_page(
             f);
 
         fprintf(f,
-                "\nendstream\n"
-                "endobj\n");
+                "\nendstream\n");
 
-        /* --------------------------------------------------
-           5 Content Stream
-        -------------------------------------------------- */
+        pdf_object_manager_end(f);
 
-        offsets[5] = ftell(f);
+        /*
+        ============================================================
+        5. CONTENT STREAM (FROM BUILDER)
+        ============================================================
+        */
+
+        pdf_object_manager_begin(mgr, f, content_obj);
 
         fprintf(f,
-                "5 0 obj\n"
                 "<< /Length %zu >>\n"
                 "stream\n",
-                pdf_content_stream_size(content));
+                pdf_cb_size(cb));
 
         fwrite(
-            pdf_content_stream_data(content),
+            pdf_cb_data(cb),
             1,
-            pdf_content_stream_size(content),
+            pdf_cb_size(cb),
             f);
 
         fprintf(f,
-                "\nendstream\n"
-                "endobj\n");
+                "\nendstream\n");
 
-        /* --------------------------------------------------
-           XREF TABLE
-        -------------------------------------------------- */
+        pdf_object_manager_end(f);
 
-        long xref_pos = ftell(f);
+        /*
+        ============================================================
+        FINALIZE FILE
+        ============================================================
+        */
 
-        fprintf(f, "xref\n");
-        fprintf(f, "0 6\n");
+        pdf_object_manager_write_xref(
+            mgr,
+            f,
+            catalog);
 
-        /* object 0 (required) */
+        /*
+        ============================================================
+        CLEANUP
+        ============================================================
+        */
 
-        fprintf(f,
-                "0000000000 65535 f \n");
-
-        /* real objects */
-
-        for (int i = 1; i <= 5; i++)
-        {
-                fprintf(f,
-                        "%010ld 00000 n \n",
-                        offsets[i]);
-        }
-
-        /* --------------------------------------------------
-           TRAILER
-        -------------------------------------------------- */
-
-        fprintf(f,
-                "trailer\n"
-                "<< /Size 6\n"
-                "/Root 1 0 R >>\n");
-
-        fprintf(f,
-                "startxref\n"
-                "%ld\n"
-                "%%%%EOF",
-                xref_pos);
+        pdf_content_builder_destroy(cb);
+        pdf_page_resources_destroy(res);
+        pdf_object_manager_destroy(mgr);
 
         fclose(f);
 

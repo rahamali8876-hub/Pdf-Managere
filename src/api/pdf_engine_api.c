@@ -1,3 +1,5 @@
+// src/api/pdf_engine_api.h
+
 #include "core/pdf_document.h"
 #include "api/pdf_engine_api.h"
 
@@ -16,20 +18,23 @@ static pdf_page_t *api_document_add_page(
     int width,
     int height)
 {
-    return pdf_document_add_page(doc, width, height);
+    // return pdf_document_add_page(doc, width, height);
+    return api_document_add_page(doc, width, height);
 }
 
 static size_t api_document_page_count(
     const pdf_document_t *doc)
 {
-    return pdf_document_page_count(doc);
+    // return pdf_document_page_count(doc);
+    return api_document_page_count(doc);
 }
 
 static pdf_page_t *api_document_get_page(
     pdf_document_t *doc,
     size_t index)
 {
-    return pdf_document_get_page(doc, index);
+    // return pdf_document_get_page(doc, index);
+    return api_document_get_page(doc, index);
 }
 
 static int api_document_save(

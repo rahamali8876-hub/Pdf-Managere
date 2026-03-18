@@ -66,10 +66,19 @@ add_library(pdfengine STATIC
     ${IMAGE_SRC}
 )
 
+
 target_include_directories(pdfengine
     PUBLIC
-    ${PROJECT_SOURCE_DIR}/include
+        ${PROJECT_SOURCE_DIR}/include/api
+
+    PRIVATE
+        ${PROJECT_SOURCE_DIR}/include
 )
+
+# target_include_directories(pdfengine
+#     PUBLIC
+#     ${PROJECT_SOURCE_DIR}/include
+# )
 
 # set_project_warnings(pdfengine)
 

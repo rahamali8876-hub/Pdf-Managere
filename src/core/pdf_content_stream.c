@@ -2,6 +2,7 @@
 
 #include "core/pdf_content_stream.h"
 #include "system/vector.h"
+#include "core/pdf_page_resources.h"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -113,6 +114,60 @@ int pdf_content_stream_draw_image(
 
     return 0;
 }
+
+// int pdf_content_stream_draw_image(
+//     pdf_content_stream_t *stream,
+//     const char *image_name,
+//     float width,
+//     float height)
+// {
+//     if (!stream || !image_name)
+//         return -1;
+
+//     char buffer[256];
+
+//     append_text(stream, "q\n");
+
+//     snprintf(
+//         buffer,
+//         sizeof(buffer),
+//         "%.2f 0 0 %.2f 0 0 cm\n",
+//         width,
+//         height);
+
+//     fprintf(f,
+//             "q\n"
+//             "200 0 0 200 50 50 cm\n"
+//             "/%s Do\n"
+//             "Q\n",
+//             image_name);
+
+//     fprintf(f,
+//             "<<\n"
+//             "/Type /Page\n"
+//             "/Parent 2 0 R\n"
+//             "/Resources ");
+
+//     pdf_page_resources_write(res, f);
+
+//     fprintf(f,
+//             "/Contents 7 0 R\n"
+//             ">>\n");
+
+//     append_text(stream, buffer);
+
+//     snprintf(
+//         buffer,
+//         sizeof(buffer),
+//         "/%s Do\n",
+//         image_name);
+
+//     append_text(stream, buffer);
+
+//     append_text(stream, "Q\n");
+
+//     return 0;
+// }
 
 /*
 ============================================================

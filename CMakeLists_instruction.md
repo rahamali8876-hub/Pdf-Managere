@@ -5,10 +5,7 @@
     cmake -G "MinGW Makefiles" ..
     cmake --build . -j
 
-
-
-
-### project(pdfengine) like google 
+### project(pdfengine) like google
 
     # 1. project options
     include(ProjectOptions)
@@ -27,3 +24,11 @@
 
     # 5. tests
     include(Testing)
+
+### If You Want to Go EVEN DEEPER
+
+    Next PhD-level subsystem:
+
+    👉 Layout Engine (auto placement, scaling, grids)
+    👉 Font/Text Engine (hard but powerful)
+    👉 Incremental PDF writing (advanced)

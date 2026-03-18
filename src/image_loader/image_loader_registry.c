@@ -1,42 +1,4 @@
-// // src/image_loader/image_loader_registry.c
-
-// #include "image_loader/image_loader_registry.h"
-
-// #include <string.h>
-
-// #define MAX_LOADERS 16
-
-// static image_loader_t *loaders[MAX_LOADERS];
-// static int loader_count = 0;
-
-// void image_loader_register(
-//     image_loader_t *loader)
-// {
-//     if (loader_count < MAX_LOADERS)
-//         loaders[loader_count++] = loader;
-// }
-
-// pdf_image_xobject_t *
-// image_loader_load(
-//     const char *filename)
-// {
-//     const char *ext =
-//         strrchr(filename, '.');
-
-//     if (!ext)
-//         return NULL;
-
-//     for (int i = 0; i < loader_count; i++)
-//     {
-//         if (strcmp(ext, loaders[i]->extension) == 0)
-//         {
-//             return loaders[i]->load(filename);
-//         }
-//     }
-
-//     return NULL;
-// }
-
+// src/image_loader/image_loader_registry.c
 
 #include "image_loader/image_loader_registry.h"
 

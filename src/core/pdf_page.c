@@ -1,9 +1,19 @@
 // src/core/pdf_page.c
 
 #include "core/pdf_page.h"
+#include "core/pdf_page_resources.h"
 
 #include <stdlib.h>
 #include <string.h>
+
+/*
+============================================================
+Creating Resources
+============================================================
+*/
+
+// pdf_page_resources_t *res =
+//     pdf_page_resources_create();
 
 /*
 ============================================================
